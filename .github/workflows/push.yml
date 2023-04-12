@@ -42,6 +42,7 @@ jobs:
       run: echo LINT
       
   test:
+    needs: [build, lint]
     runs-on: windows-latest
     steps:
     - name: Setup VSTest.exe
