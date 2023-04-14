@@ -82,7 +82,7 @@ jobs:
       
     - name: addEmail
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: copy config --global user.email "faesslac@mail.uc.edu"
+      run: git config --global user.email "faesslac@mail.uc.edu"
       
     - name: addName
       working-directory: ${{env.GITHUB_WORKSPACE}}
