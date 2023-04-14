@@ -6,7 +6,7 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "Its a me, Mario\n";
     CoolClass coolClass;
     std::cout << "Calc " << coolClass.Calc(1, 2);
 }
