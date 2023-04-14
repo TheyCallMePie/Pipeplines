@@ -52,6 +52,13 @@ jobs:
     needs: [build, lint]
     runs-on: windows-latest
     steps:
+    - name: UploadBinaries
+      uses: actions/upload-artifact@v3
+      with:
+        name: my-artifact
+        path: x64\Release\
+        if-no-files-found: error 
+        
     - name: Setup VSTest.exe
       uses: Malcolmnixon/Setup-VSTest@v4
       
